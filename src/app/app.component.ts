@@ -14,7 +14,7 @@ export class AppComponent {
   title = 'chartjs-trendline';
 
   protected data = () => {
-    const newVar = {
+    return {
       datasets: [{
         trendlineLinear: {
           width: 1,
@@ -33,8 +33,6 @@ export class AppComponent {
         ]
       }]
     };
-    console.log(newVar);
-    return newVar;
   }
 
   protected config: ChartOptions<'scatter'> = {
